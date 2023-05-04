@@ -1,0 +1,48 @@
+package ONEtoONE;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
+
+@Entity
+public class Question {
+
+	@Id
+	private int ID;
+	private String question;
+	@OneToOne
+	@JoinColumn(name = "Q_ID")
+	private Answer answer;
+
+	public int getID() {
+		return ID;
+	}
+
+	public void setID(int iD) {
+		ID = iD;
+	}
+
+	public String getName() {
+		return Name;
+	}
+
+	public void setName(String name) {
+		Name = name;
+	}
+
+	public Answer getAnswer() {
+		return answer;
+	}
+
+	public void setAnswer(Answer answer) {
+		this.answer = answer;
+	}
+
+	@Override
+	public String toString() {
+		return "Question [ID=" + ID + ", Name=" + Name + ", answer=" + answer + "]";
+	}
+
+}

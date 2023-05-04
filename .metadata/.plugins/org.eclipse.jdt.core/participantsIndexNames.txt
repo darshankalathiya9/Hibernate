@@ -1,0 +1,3 @@
+INDEX VERSION 1.131
+G:\JAVA_FRAMWORK\HIBERNATE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2316362051.index
+\HibernateWEB\src\main\java

@@ -1,0 +1,13 @@
+package ONEtoONE;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class Answer {
+
+	@Id
+	private int ID;
+	private String Name;
+	private Question question;
+}

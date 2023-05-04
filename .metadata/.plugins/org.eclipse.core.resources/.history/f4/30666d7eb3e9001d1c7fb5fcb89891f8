@@ -1,0 +1,12 @@
+package Model;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class User {
+	@Id
+	private int ID;
+	private String Name,Address,Email,Password;
+	private long Contact;
+}

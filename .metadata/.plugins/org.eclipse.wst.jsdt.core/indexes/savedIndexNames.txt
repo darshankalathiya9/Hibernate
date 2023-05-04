@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+G:\JAVA_FRAMWORK\HIBERNATE\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+4128505030.index
+1660269092.index
+3364171328.index
+1702518767.index
+3954142820.index
+2385598369.index

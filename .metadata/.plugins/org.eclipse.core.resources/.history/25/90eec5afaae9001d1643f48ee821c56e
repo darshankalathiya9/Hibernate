@@ -1,0 +1,38 @@
+package ONEtoMANY;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+public class Main {
+public static void main(String[] args) {
+	SessionFactory sf = new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
+	Session session = sf.openSession();
+	Transaction tx = session.beginTransaction();
+	
+	Seller s1 = new Seller();
+	s1.setID(1);
+	s1.setName("DK");
+	
+	Seller s2 = new Seller();
+	s2.setID(2);
+	s2.setName("Bhano");
+	
+	Product p1 = new Product();
+	p1.setPID(1);
+	p1.setP_Name("Laptop");
+	
+	Product p2 = new Product();
+	p2.setPID(2);
+	p2.setP_Name("Mobile");
+	
+	Product p3 = new Product();
+	p3.setPID(3);
+	p3.setP_Name("TV");
+	
+	tx.commit();
+	session.close();
+	sf.close();
+}
+}

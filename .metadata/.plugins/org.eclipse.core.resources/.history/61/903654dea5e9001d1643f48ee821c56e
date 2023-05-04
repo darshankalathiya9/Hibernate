@@ -1,0 +1,19 @@
+package ONEtoONE;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.OneToOne;
+
+@Entity
+public class Answer {
+
+	@Id
+	@Column(name="Answer_ID")
+	private int ID;
+	private String answer;
+	@OneToOne(mappedBy = "answer")
+	private Question question;
+
+
+}
