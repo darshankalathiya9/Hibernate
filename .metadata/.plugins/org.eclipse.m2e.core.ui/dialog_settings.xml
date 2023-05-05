@@ -25,12 +25,15 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.core"/>
 			<item value="com.hibernate"/>
 		</list>
 		<list key="groupId">
+			<item value="com.core"/>
 			<item value="com.hibernate"/>
 		</list>
 		<list key="artifactId">
+			<item value="SpringCore"/>
 			<item value="HibernateCORE"/>
 		</list>
 		<list key="projectNameTemplate">

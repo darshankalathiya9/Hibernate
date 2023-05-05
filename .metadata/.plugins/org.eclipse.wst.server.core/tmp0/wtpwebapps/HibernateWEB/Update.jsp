@@ -10,11 +10,9 @@
 <body>
 	<%
 	User u = null;
-	if (session.getAttribute("data") != null) {
-		u = (User) session.getAttribute("data");
-	} else {
-		response.sendRedirect("Login.jsp");
-	}
+	if (request.getAttribute("data") != null) {
+		u = (User) request.getAttribute("data");
+	} 
 	%>
 	
 	<form action="UserController" method="post">

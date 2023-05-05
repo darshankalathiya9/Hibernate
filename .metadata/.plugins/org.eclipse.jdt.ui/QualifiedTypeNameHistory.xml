@@ -29,9 +29,9 @@
     <fullyQualifiedTypeName name="Connection.DBConnection"/>
     <fullyQualifiedTypeName name="java.lang.Long"/>
     <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
-    <fullyQualifiedTypeName name="Model.User"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="Dao.UserDao"/>
     <fullyQualifiedTypeName name="javax.persistence.Table"/>
     <fullyQualifiedTypeName name="org.hibernate.Query"/>
+    <fullyQualifiedTypeName name="Model.User"/>
 </qualifiedTypeNameHistroy>

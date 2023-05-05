@@ -64,12 +64,12 @@ public class UserDao {
 		
 		Query q = session.createQuery("from User u where u.ID=:ID");
 		q.setParameter("ID", ID);
-		
 		list = q.list();
 		u1 = list.get(0);
 		
 		tx.commit();
 		session.close();
+		System.out.println(u1);
 		return u1;
 	}
 	
@@ -93,13 +93,10 @@ public class UserDao {
 		System.out.println("Data Updated succesfully.");
 	}
 	
-	public void deleteUser(int ID) {
+	public void deleteUser(User u) {
 		session = new DBConnection().getSession();
 		tx = session.beginTransaction();
-		
-		Query q = session.createQuery("delete from User where ID=:ID");
-		q.setParameter("ID", ID);
-		
+		session.delete(u);
 		tx.commit();
 		session.close();
 		System.out.println("Data Deleted Succesfully.");

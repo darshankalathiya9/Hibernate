@@ -81,7 +81,8 @@ public class UserController extends HttpServlet {
 		
 		else if (action.equalsIgnoreCase("Delete")) {
 			int ID = Integer.parseInt(request.getParameter("ID"));
-			new UserDao().deleteUser(ID);
+			User u = new UserDao().getUserByID(ID);
+			new UserDao().deleteUser(u);
 			response.sendRedirect("Home.jsp");
 		}
 	}
