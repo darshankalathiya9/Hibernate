@@ -1,8 +1,0 @@
-package ONEtoONE;
-
-import org.hibernate.SessionFactory;
-import org.hibernate.cfg.Configuration;
-
-public class Main {
-		SessionFactory sf = new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
-}

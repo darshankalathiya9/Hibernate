@@ -1,10 +1,10 @@
-#Fri May 05 08:09:26 IST 2023
+#Sat May 20 10:04:00 IST 2023
 a=finishWizard
 c=0
 cl=org.hibernate.eclipse.console.wizards.NewConfigurationWizard
 cmp=usage
 ct=jbt
-d=1683254366160
+d=1684557240517
 l=Wizard class name
 s=0
 v=2.2.500
